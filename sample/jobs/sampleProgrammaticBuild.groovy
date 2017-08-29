@@ -10,7 +10,6 @@ def job = job('configuration-watcher') {
         git {
             remote {
                 url(CONFIGURATION_REPO_URL)
-                relativeTargetDir('configuration')
                 branch(CONFIGURATION_BRANCH)
             }
         }
